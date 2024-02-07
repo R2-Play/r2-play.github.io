@@ -132,7 +132,7 @@
           <!-- Your image here -->
           <img src="static/images/teaser.jpg" alt="MY ALT TEXT" style="width: 50%; margin: auto; display: block;"/>
           <div class="content has-text-justified">
-            Imagine an agent learning to play Palworld (a Pok\'emon-like game). (1) The agent exhibits confusion when only relying on textual guidance. (2) The agent is confused when presented with images of a Pal sphere and a Pal. (3) The agent understands how to catch a pet through multimodal guidance, which combines textual guidance with images of the Pal sphere and Pal. 
+            Figure1: Imagine an agent learning to play Palworld (a Pok\'emon-like game). (1) The agent exhibits confusion when only relying on textual guidance. (2) The agent is confused when presented with images of a Pal sphere and a Pal. (3) The agent understands how to catch a pet through multimodal guidance, which combines textual guidance with images of the Pal sphere and Pal. 
           </div>
         </div>
         </div>
@@ -143,7 +143,7 @@
 <!-- End paper introduction -->
 
 <!-- Paper Method -->
-<section class="section hero is-white">
+<section class="section hero is-light">
   <div class="container is-max-widescreen">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -151,9 +151,29 @@
          <div class="item">
           <!-- Your image here -->
           <img src="static/images/example.jpg" alt="MY ALT TEXT" style="width: 65%; margin: auto; display: block;"/>
-          <h2 class="subtitle has-text-centered">
+          <div class="content has-text-justified"
             Figure2：An illustrative example of game instructions. Each instruction consists of three sections: game description, game trajectory, and game guidance (including action, language guidance, and the position of key elements)
-          </h2>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Method -->
+
+<!-- Paper Method -->
+<section class="section hero is-white">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Decision Transformer with Game Instruction</h2>
+         <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/method.jpg" alt="MY ALT TEXT" style="width: 65%; margin: auto; display: block;"/>
+          <div class="content has-text-justified"
+            Figure3：Firstly, we undertake the representation of multimodal instructions. Secondly, we calculate importance scores for each instruction in the Instruction set. Finally, We propose a novel design named SHyperGenerator to integrate game instructions into DT. N instruction generates n module parameters through hypernetworks. The module parameters are weighted based on the importance score of the instruction, and then utilized as adapter parameters. 
+          </div>
         </div>
         </div>
       </div>

@@ -126,19 +126,22 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Creating a generalist agent that can accomplish diverse tasks is an enduring goal in artificial intelligence. The recent advancement in integrating textual guidance or visual trajectory into a single decision-making agent presents a potential solution. This line of research provides task-specific context to guide the agent. Although textual guidance and visual trajectory each offer advantages, they also have distinct limitations: (1) Textual guidance lacks visually-grounded information, which diminishes its expressiveness for decision-making tasks based on visual observations; (2) Without clear task instructions, deriving an effective strategy from a visual trajectory is extremely difficult, which is similar to people's difficulty understanding player intentions when watching game videos without explanations. The complementary relationship between textual guidance and visual trajectory suggests their combination enhances guidance effectiveness, as illustrated in Figure 1.  As a result, this paper aims to develop an agent capable of adapting to new tasks through multimodal guidance.  <br>  Similar endeavors are undertaken in the field of multimodal models. Drawing inspiration from the success of multimodal instruction tuning in visual tasks, we treat the visual-based RL task as a long-horizon vision task, aiming to integrate it into the RL field. We construct a set of Multimodal Game Instruction (MGI) to provide multimodal guidance for agents. The MGI set comprises thousands of game instructions sourced from approximately 50 diverse Atari games, designed to provide a detailed and thorough context. Each instruction entails a 20-step trajectory, labeled with corresponding textual language guidance. The construction of this multimodal game instruction set aims to empower agents to read game instructions for playing various games and adapting to the new ones.  
+            Creating a generalist agent that can accomplish diverse tasks is an enduring goal in artificial intelligence. The recent advancement in integrating textual guidance or visual trajectory into a single decision-making agent presents a potential solution. This line of research provides task-specific context to guide the agent. Although textual guidance and visual trajectory each offer advantages, they also have distinct limitations: (1) Textual guidance lacks visually-grounded information, which diminishes its expressiveness for decision-making tasks based on visual observations; (2) Without clear task instructions, deriving an effective strategy from a visual trajectory is extremely difficult, which is similar to people's difficulty understanding player intentions when watching game videos without explanations. The complementary relationship between textual guidance and visual trajectory suggests their combination enhances guidance effectiveness, as illustrated in Figure 1.  As a result, this paper aims to develop an agent capable of adapting to new tasks through multimodal guidance.  <br><br>  Similar endeavors are undertaken in the field of multimodal models. Drawing inspiration from the success of multimodal instruction tuning in visual tasks, we treat the visual-based RL task as a long-horizon vision task, aiming to integrate it into the RL field. We construct a set of Multimodal Game Instruction (MGI) to provide multimodal guidance for agents. The MGI set comprises thousands of game instructions sourced from approximately 50 diverse Atari games, designed to provide a detailed and thorough context. Each instruction entails a 20-step trajectory, labeled with corresponding textual language guidance. The construction of this multimodal game instruction set aims to empower agents to read game instructions for playing various games and adapting to the new ones.  
           <p>
+        </div>
+              </div>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/teaser.pdf" alt="PDF Image"/>
+        <h2 class="subtitle has-text-centered">
+          Figure1：Imagine an agent learning to play Palworld (a Pok\'emon-like game). (1) The agent exhibits confusion when only relying on textual guidance. (2) The agent is confused when presented with images of a Pal sphere and a Pal. (3) The agent understands how to catch a pet through multimodal guidance, which combines textual guidance with images of the Pal sphere and Pal.
+        </h2>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End paper introduction -->
-
-<figure>
-    <img src="https://github.com/R2-Play/r2-play.github.io/tree/master/static/images/teaser.pdf" alt="PDF Image" style="width:80%; max-width:500px;">
-    <figcaption>Imagine an agent learning to play Palworld (a Pok\'emon-like game). (1) The agent exhibits confusion when only relying on textual guidance. (2) The agent is confused when presented with images of a Pal sphere and a Pal. (3) The agent understands how to catch a pet through multimodal guidance, which combines textual guidance with images of the Pal sphere and Pal.</figcaption>
-</figure>
 
 
 <!--BibTex citation -->
@@ -153,6 +156,26 @@
     </div>
 </section>
 <!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
 
 
   <footer class="footer">

@@ -171,19 +171,22 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Decision Transformer with Game Instruction</h2>
+        <div class="content has-text-justified">
+          <p>
+            The current section introduces the Decision Transformer with Game Instruction (DTGI), a DT model that integrates multimodal game instructions, as depicted in Figure 3. Firstly, we undertake the representation of multimodal instructions. Secondly, we calculate importance scores for each instruction in the Instruction set. Finally, We propose a novel design named SHyperGenerator to integrate game instructions into DT. N instruction generates n module parameters through hypernetworks. The module parameters are weighted based on the importance score of the instruction, and then utilized as adapter parameters.<br><br> 
+          </p>
          <div class="item">
           <!-- Your image here -->
           <img src="static/images/method.jpg" alt="MY ALT TEXT" style="width: 50%; margin: auto; display: block;"/>
           <div class="content has-text-justified">
-            Figure3：Firstly, we undertake the representation of multimodal instructions. Secondly, we calculate importance scores for each instruction in the Instruction set. Finally, We propose a novel design named SHyperGenerator to integrate game instructions into DT. N instruction generates n module parameters through hypernetworks. The module parameters are weighted based on the importance score of the instruction, and then utilized as adapter parameters. 
-          </div>
+            Figure3: Model architecture of Decision Transformer with Game Instruction
         </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper Method -->
+<!-- End paper introduction -->
 
 
 <!--BibTex citation -->
@@ -193,6 +196,7 @@
       <pre><code>@article{Jin2024,
   title={Read to Play (R2-Play): Decision Transformer with Multimodal Game Instruction},
   author={Yonggang Jin, Ge Zhang, Hao Zhao, Tianyu Zheng, Jiawei Guo, Liuyu Xiang, Tommy X. Yue, Wenhao Huang, Wenhu Chen, Zhaofeng He, Jie Fu},
+  journal={arXiv preprint arXiv:2402.04154},     
   year={2024}
 }</code></pre>
     </div>

@@ -129,10 +129,12 @@
             Creating a generalist agent that can accomplish diverse tasks is an enduring goal in artificial intelligence. The recent advancement in integrating textual guidance or visual trajectory into a single decision-making agent presents a potential solution. This line of research provides task-specific context to guide the agent. Although textual guidance and visual trajectory each offer advantages, they also have distinct limitations: (1) Textual guidance lacks visually-grounded information, which diminishes its expressiveness for decision-making tasks based on visual observations; (2) Without clear task instructions, deriving an effective strategy from a visual trajectory is extremely difficult, which is similar to people's difficulty understanding player intentions when watching game videos without explanations. The complementary relationship between textual guidance and visual trajectory suggests their combination enhances guidance effectiveness, as illustrated in Figure 1.  As a result, this paper aims to develop an agent capable of adapting to new tasks through multimodal guidance.  <br>  Similar endeavors are undertaken in the field of multimodal models. Drawing inspiration from the success of multimodal instruction tuning in visual tasks, we treat the visual-based RL task as a long-horizon vision task, aiming to integrate it into the RL field. We construct a set of Multimodal Game Instruction (MGI) to provide multimodal guidance for agents. The MGI set comprises thousands of game instructions sourced from approximately 50 diverse Atari games, designed to provide a detailed and thorough context. Each instruction entails a 20-step trajectory, labeled with corresponding textual language guidance. The construction of this multimodal game instruction set aims to empower agents to read game instructions for playing various games and adapting to the new ones.<br><br> 
           </p>
          <div class="item">
+           <div style="width: 50%; margin: auto; text-align: center;">
           <!-- Your image here -->
           <img src="static/images/teaser.jpg" alt="MY ALT TEXT" style="width: 75%; margin: auto; display: block;"/>
-          <div class="center">
+           <div style="width: 100%;">
             Figure1: Imagine an agent learning to play Palworld (a Pok\'emon-like game). (1) The agent exhibits confusion when only relying on textual guidance. (2) The agent is confused when presented with images of a Pal sphere and a Pal. (3) The agent understands how to catch a pet through multimodal guidance, which combines textual guidance with images of the Pal sphere and Pal. 
+          </div>
           </div>
         </div>
         </div>
@@ -153,11 +155,13 @@
             In the multimodal community, considerable attention is devoted to the integration of instruction tuning within multimodal models. These efforts aim to enhance the performance of multimodal models in performing specific visual tasks by incorporating language instructions. Drawing upon the insights derived from these efforts, it is imperative to explore the potential of leveraging multimodal game instructions to augment the capabilities of RL agents, especially in the context of visual-based RL tasks as long-horizon visual tasks. We construct a set of Multimodal Game Instruction (MGI) to apply the benefits of instruction tuning to DT. An illustrative example of a multimodal game instruction is presented in Figure 2.<br><br> 
           </p>
          <div class="item">
+           <div style="width: 50%; margin: auto; text-align: center;">
           <!-- Your image here -->
           <img src="static/images/instruction_gif.gif" alt="MY ALT TEXT" style="width: 50%; margin: auto; display: block;"/>
-          <div class="center">
+          <div style="width: 100%;">
             Figure2: An illustrative example of game instructions. Each instruction consists of three sections: game description, game trajectory, and game guidance (including action, language guidance, and the position of key elements).
         </div>
+           </div>  
         </div>
       </div>
     </div>
